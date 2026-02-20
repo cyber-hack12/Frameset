@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Frame 2</title>
+    <link rel="stylesheet" href="../assets/css/playaudio.css" />
+  </head>
+
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    button {
+      width: 100px;
+      height: 50px;
+      background-color: rgb(20, 150, 20);
+      border-radius: 12px;
+      border: 1px solid white;
+      color: white;
+    }
+  </style>
+
+  <body bgcolor="#0A192F">
+    <button id="playBtn">Click Me</button>
+    <br>
+    <h1 class="message"></h1>
+
+    <script>
+      const btn = document.getElementById("playBtn");
+      const p = document.querySelector(".message");
+
+      btn.addEventListener("click", () => {
+        p.innerHTML = "Hello";
+      });
+    </script>
+  </body>
+</html>
